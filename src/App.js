@@ -1,22 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 import CodeMirror from './components/CodeMirror/index'
 import { Column } from './components/Styled/index'
 
-class App extends Component {
-  render() {
-    const { code, updateCode } = this.props
-
-    console.log(code)
-
-    return (
-      <Column>
-        <CodeMirror
-          value={code}
-          onChange={updateCode}
-        />
-      </Column>
-    );
-  }
+export default function App({
+  code,
+  handleOnChange,
+}) {
+  console.log(code)
+  return (
+    <Column>
+      <CodeMirror
+        value={code}
+        onChange={handleOnChange}
+        style={{ width: '100%' }}
+      />
+    </Column>
+  )
 }
-
-export default App;
