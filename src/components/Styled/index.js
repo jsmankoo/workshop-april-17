@@ -1,7 +1,3 @@
-import Column from './Column'
-import Wrapper from './Wrapper'
-
-export {
-  Column,
-  Wrapper,
-}
+export { default as Column } from './Column'
+export { default as Wrapper } from './Wrapper'
+export { default as Row } from './Row'

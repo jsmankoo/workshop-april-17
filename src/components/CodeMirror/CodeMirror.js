@@ -5,6 +5,10 @@ import 'codemirror/theme/monokai.css'
 import 'codemirror/mode/javascript/javascript'
 
 const Code = styled(CodeMirror) `
-  width: 100%;
+  flex: 1;
+  
+  .CodeMirror {
+    height: 100%;
+  }
 `
 export default Code
