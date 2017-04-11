@@ -6,7 +6,7 @@ import 'codemirror/mode/javascript/javascript'
 
 const Code = styled(CodeMirror) `
   flex: 1;
-  
+
   .CodeMirror {
     height: 100%;
   }

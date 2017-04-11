@@ -1,21 +1,22 @@
 import React from 'react'
 import CodeMirror from '../../components/CodeMirror/index'
 import { Row } from '../../components/Styled/index'
-import { SVG } from '../../components/SVG/index'
+import D3 from '../../components/D3/index'
 
 export default function App({
-  code,
+  code, json,
   handleOnChange,
 }) {
-  console.log(code)
+  console.log(JSON.stringify(json, null, 2))
   return (
     <Row>
       <CodeMirror
         value={code}
         onChange={handleOnChange}
       />
-      <SVG width='1000px' height='1000px'>
-      </SVG>
+      <D3
+        json={json}
+      />
     </Row>
   )
 }
